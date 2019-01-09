@@ -25,9 +25,9 @@
 @css[fragment](How many Tickets have I replied to?)
 
 @ul[square]
-- This week
-- Today
 - This hour
+- Todat
+- This week
 @ulend
 
 @css[fragment](Am I hitting targets? *Am I doing OK?*)
@@ -64,15 +64,22 @@ BitBar lets you put the output of any script or program right in your Mac's Menu
 
 @css[fragment](Use pretty much any language you like)
 
-@css[fragment](It could be as simple as...)
-@css[fragment](
+---
+
+## How does BitBar work?
+
+It could be as simple as...
+
 ```bash
 echo "Hello Zapier!"
 ```
-)
-@css[fragment](Or something a little more useful...)
 
-@css[fragment](
+---
+
+## How does BitBar work?
+
+Or something a little more useful...
+
 ```bash
 # Help Scout reply data variables
 declare help_scout_replies_week=$(curl -s -u $help_scout_api_key:X "$help_scout_url?start=$start_date_this_week&end=$end_date_this_week&viewBy=day&user=$help_scout_user_id")
@@ -85,39 +92,61 @@ declare count_hs_replies_hour=$(echo $help_scout_replies_hour | /usr/local/bin/j
 
 echo "Tickets: Hour $count_hs_replies_hour - Day: $count_hs_replies_day -  Week: count_hs_replies_week | size=12"
 ```
-)
 
-@css[fragment](Anything that can write to *standard out* is supported, so you can use Shell scripting, Python, JavaScript, Ruby, Shell, and more...)
+---
+
+## How does BitBar work?
+
+Anything that can write to *standard out* is supported, so you can use Shell scripting, Python, JavaScript, Ruby, Shell, and more...
 
 ---
 
 ## Useful things you can do
 
-- Get some data from a REST API
+Get some data from a REST API
+
 ```bash
 # 'curl' is a command-line tool for transferring data from or to a servers
 curl https://api.helpscout.net/v1/reports/user/replies.json
 ```
-- Transform that data (query it, do math on it)
+
+---
+
+## Useful things you can do
+
+Transform that data (query it, do math on it)
+
 ```bash
 # 'jq' is a command-line tool for transforming JSON data
 cat data | jq -j ".current[] | select(.date==\"$date_today_zero_hours\").replies"
 ```
-- Make pretty graphs from the data
+
+---
+
+## Useful things you can do
+
+Make pretty graphs from the data
+
 ```bash
 # gnuplot is a command-line tool for generating graphs
 cat data | gnuplot -p -c plot.gnu
 ```
-- Display that information in the Menu Bar
+
+---
+
+## Useful things you can do
+
+Then display all that information in the Menu Bar
 
 ---
 
 ## How I use BitBar
 
-Simple script which shows me the time now in UTC
-Find this really helpful when looking at logs
+@css[fragment](Simple script which shows me the time now in UTC)
 
-![UTC Timestamp](template/img/timestamp-napkin.png)
+@css[fragment](*Find this really helpful when looking in Graylog*)
+
+@image[fragment](template/img/timestamp-napkin.png)
 
 ---
 
