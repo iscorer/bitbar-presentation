@@ -92,7 +92,7 @@ cat data | gnuplot -p -c plot.gnu
 ```
 - Display that information in the Menu Bar
 
---
+---
 
 ## How I use BitBar
 
@@ -101,7 +101,7 @@ Find this really helpful when looking at logs
 
 ![UTC Timestamp](template/img/timestamp-napkin.png)
 
---
+---
 
 ## What I've been working on (TicketBar)
 
@@ -117,7 +117,7 @@ Find this really helpful when looking at logs
 
 ![TicketBar](template/img/ticket-bar-mock.png)
 
---
+---
 
 ## Over to you
 
@@ -127,7 +127,7 @@ Find this really helpful when looking at logs
 - Build something yourself
 - Or help me with TicketBar!
 
---
+---
 
 ## Resources
 
@@ -135,5 +135,7 @@ Find this really helpful when looking at logs
 -- BitBar (GitHub)
 -- BitBar Plugins
 -- TicketBar (GitHub)
+
+---
 
 ## Questions?
