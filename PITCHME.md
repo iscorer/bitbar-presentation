@@ -26,7 +26,7 @@
 
 @ul[square]
 - This hour
-- Todat
+- Today
 - This week
 @ulend
 
@@ -50,7 +50,7 @@ BitBar lets you put the output of any script or program right in your Mac's Menu
 
 ## How can BitBar help?
 
-@css[fragment](The MacOS Menu Bar is a convenient and accessible place to display information)
+@css[fragment](The MacOS Menu Bar is a convenient and accessible place to display "snippets" of information)
 
 @css[fragment](BitBar lets *you* choose the information *you want to see* in the Menu Bar)
 
@@ -138,7 +138,7 @@ cat data | gnuplot -p -c plot.gnu
 
 ## Useful things you can do
 
-Then display all that information in the Menu Bar
+Then display that information in the Menu Bar
 
 ---
 
