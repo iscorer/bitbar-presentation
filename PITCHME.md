@@ -58,14 +58,12 @@ BitBar lets you put the output of any script or program right in your Mac's Menu
 
 @css[fragment](You can tell BitBar *when* to update the information it displays.)
 
-@css[fragment](
-```bash
+@ul
 10s - ten seconds
 1m - one minute
 2h - two hours
 1d - a day
-```
-)
+@ulend
 
 ---
 
