@@ -20,14 +20,19 @@
 
 ## More Specifically...
 
-Here's a problem I wanted to solve...
-I wanted to know...
+@css[fragment](Here's a problem I wanted to solve...)
 
-- How many Tickets have I replied to?
-    - This week
-    - Today
-    - This hour
-- Am I hitting targets? (Am I doing OK?)
+@css[fragment](I wanted to know...)
+
+@css[fragment](How many Tickets have I replied to?)
+
+@css[fragment](- This week)
+
+@css[fragment](- Today)
+
+@css[fragment](- This hour)
+
+@css[fragment](Am I hitting targets? (Am I doing OK?))
 
 ---
 
