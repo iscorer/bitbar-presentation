@@ -56,7 +56,7 @@ BitBar lets you put the output of any script or program right in your Mac's Menu
 
 @css[fragment](BitBar lets *you* choose the information *you want to see* in the Menu Bar.)
 
-@css[fragment](You can tell BitBar when to update (refresh) the information it displays...)
+@css[fragment](You can tell BitBar when to update the information it displays...)
 
 @css[fragment](- 10s - ten seconds
     - 1m - one minute
