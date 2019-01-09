@@ -1,66 +1,139 @@
----?color=linear-gradient(to right, #c02425, #f0cb35)
-@title[Introduction]
+## The Problem
 
-@snap[west text-25 text-bold text-white]
-GitPitch<br>*The Template*
-@snapend
-
-@snap[south-west byline text-white text-06]
-The Fastest Way From Idea To Presentation.
-@snapend
+- Too much information
+- ![Too much information](https://media.giphy.com/media/3o6gDSdED1B5wjC2Gc/giphy.gif)
+- How can we more easily consume only the information we're interested in...
+- So we can take action on it
+- And help prevent...
+- ![Head Explosion](https://media.giphy.com/media/R0kVcQUow2Xtu/giphy.gif)
 
 ---
-@title[Slide Markdown]
 
-### Each slide in this presentation is provided as a *template*.
+## More Specifically...
 
-<br><br>
+Here's a problem I wanted to solve...
+I wanted to know...
 
-@snap[south span-100 text-purple text-05]
-Reuse the *markdown snippet* for any slide in this template within your own @css[text-gold text-bold](PITCHME.md) files.
-@snapend
+- How many Tickets have I replied to?
+    - This week
+    - Today
+    - This hour
+- Am I hitting targets? (Am I doing OK?)
 
 ---
-@title[Tip! Fullscreen]
 
-![TIP](template/img/tip.png)
-<br>
-For the best viewing experience, press F for fullscreen.
-@css[template-note](We recommend using the *SPACE* key to navigate between slides.)
+## One Potential Solution
 
----?include=template/md/split-screen/PITCHME.md
+![BitBar](template/img/bitbar.png)
 
----?include=template/md/sidebar/PITCHME.md
+---
 
----?include=template/md/list-content/PITCHME.md
+## What is BitBar?
 
----?include=template/md/boxed-text/PITCHME.md
+BitBar lets you put the output of any script or program right in your Mac's Menu Bar
 
----?include=template/md/image/PITCHME.md
+![BitBar Preview](template/img/bitbar-preview.png)
 
----?include=template/md/sidebox/PITCHME.md
+---
 
----?include=template/md/code-presenting/PITCHME.md
+## How can BitBar help?
 
----?include=template/md/header-footer/PITCHME.md
+- The Menu Bar is a convenient, easily and always accessible, and yet unobtrusive way to show information on MacOS.
+- BitBar lets you choose what information *you* want to display in the Menu Bar.
+- You can tell BitBar when to update (refresh) the information it displays...
+    - 10s - ten seconds
+    - 1m - one minute
+    - 2h - two hours
+    - 1d - a day
 
----?include=template/md/quotation/PITCHME.md
+---
 
----?include=template/md/announcement/PITCHME.md
+## How does it work?
 
----?include=template/md/about/PITCHME.md
+- Write a simple script or run a program which outputs something
+- Use pretty much any language you like
+- It could be as simple as...
+```bash
+echo "Hello Zapier!"
+```
+- Or something a little more useful...
+```bash
+# Help Scout reply data variables
+declare help_scout_replies_week=$(curl -s -u $help_scout_api_key:X "$help_scout_url?start=$start_date_this_week&end=$end_date_this_week&viewBy=day&user=$help_scout_user_id")
+declare help_scout_replies_hour=$(curl -s -u $help_scout_api_key:X "$help_scout_url?start=$start_date_this_hour&end=$end_date_this_hour&viewBy=day&user=$help_scout_user_id")
 
----?include=template/md/wrap-up/PITCHME.md
+# Help Scout reply count variables (extracted from JSON API response data using 'jq')
+declare count_hs_replies_week=$(echo $help_scout_replies_week | /usr/local/bin/jq -j -s 'map(.current[].replies) | add')
+declare count_hs_replies_day=$(echo $help_scout_replies_week | /usr/local/bin/jq -j ".current[] | select(.date==\"$date_today_zero_hours\").replies")
+declare count_hs_replies_hour=$(echo $help_scout_replies_hour | /usr/local/bin/jq -j '.current[0].replies')
 
----?image=template/img/presenter.jpg
-@title[The Template Docs]
+echo "Tickets: Hour $count_hs_replies_hour - Day: $count_hs_replies_day -  Week: count_hs_replies_week | size=12"
+```
+- Anything that can write to *standard out* is supported, so you can use Shell scripting, Python, JavaScript, Ruby, Shell, and more...
 
-@snap[north-west sign-off]
-### **Now it's @color[#e58537](your) turn.**
-<br>
-#### Quickstart your next slide deck<br>with @size[1.4em](The GitPitch Template).
-@snapend
+---
 
-@snap[south docslink text-gold span-100]
-For supporting documentation see the [The Template Docs](https://gitpitch.com/docs/the-template)
-@snapend
+## Useful things you can do
+
+- Get some data from a REST API
+```bash
+# 'curl' is a command-line tool for transferring data from or to a servers
+curl https://api.helpscout.net/v1/reports/user/replies.json
+```
+- Transform that data (query it, do math on it)
+```bash
+# 'jq' is a command-line tool for transforming JSON data
+cat data | jq -j ".current[] | select(.date==\"$date_today_zero_hours\").replies"
+```
+- Make pretty graphs from the data
+```bash
+# gnuplot is a command-line tool for generating graphs
+cat data | gnuplot -p -c plot.gnu
+```
+- Display that information in the Menu Bar
+
+--
+
+## How I use BitBar
+
+Simple script which shows me the time now in UTC
+Find this really helpful when looking at logs
+
+![UTC Timestamp](template/img/timestamp-napkin.png)
+
+--
+
+## What I've been working on (TicketBar)
+
+![TicketNumbers](template/img/ticket-numbers.png)
+
+![TicketBar](template/img/ticket-bar-r2.png)
+
+![TicketBar](template/img/ticket-bar-r3.png)
+
+![TicketBar](template/img/ticket-bar-actual.png)
+
+## What I'm aiming for
+
+![TicketBar](template/img/ticket-bar-mock.png)
+
+--
+
+## Over to you
+
+- Install it
+- Install some plugins
+- Check out the BitBar docs
+- Build something yourself
+- Or help me with TicketBar!
+
+--
+
+## Resources
+
+-- BitBar
+-- BitBar (GitHub)
+-- BitBar Plugins
+-- TicketBar (GitHub)
+
+## Questions?
