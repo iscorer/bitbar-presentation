@@ -54,7 +54,7 @@ BitBar lets you put the output of any script or program right in your Mac's Menu
 
 @css[fragment](BitBar lets *you* choose the information *you want to see* in the Menu Bar)
 
-@css[fragment](You can tell BitBar *when* to update the information it displays in seconds, minutes, hours or even days)
+@css[fragment](You can tell BitBar *when* to update the information it displays in seconds. Choose in minutes, hours or even days.)
 
 ---
 
@@ -79,7 +79,7 @@ echo "Hello Zapier!"
 ## How does BitBar work?
 
 Or something a little more useful...
-
+@size[0.5ems](
 ```bash
 # Help Scout reply data variables
 declare help_scout_replies_week=$(curl -s -u $help_scout_api_key:X "$help_scout_url?start=$start_date_this_week&end=$end_date_this_week&viewBy=day&user=$help_scout_user_id")
@@ -92,6 +92,7 @@ declare count_hs_replies_hour=$(echo $help_scout_replies_hour | /usr/local/bin/j
 
 echo "Tickets: Hour $count_hs_replies_hour - Day: $count_hs_replies_day -  Week: count_hs_replies_week | size=12"
 ```
+)
 
 ---
 
