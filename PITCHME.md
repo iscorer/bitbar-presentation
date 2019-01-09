@@ -172,21 +172,23 @@ Simple script which shows me the time now in UTC
 
 ## Over to you
 
-@css[fragment](Install BitBar)
-@css[fragment](Install some plugins)
-@css[fragment](Take a look at the plugin code)
-@css[fragment](Check out the BitBar docs)
-@css[fragment](Build your own BitBar)
-@css[fragment](Or help me with TicketBar)
+@ul
+- Install BitBar
+- Install some BitBar plugins
+- Check out the BitBar docs
+- Take a look at the plugin code (it's all on GitHub)
+- Build your own BitBar
+- Or help me with TicketBar!
+@ulend
 
 ---
 
 ## Resources
 
 @ul
-BitBar - https://getbitbar.com/
-BitBar (GitHub) - https://github.com/matryer/bitbar
-TicketBar (GitHub) - *coming soon...*
+- BitBar - https://getbitbar.com/
+- BitBar (GitHub) - https://github.com/matryer/bitbar
+- TicketBar (GitHub) - *coming soon...*
 @ulend
 
 ---
