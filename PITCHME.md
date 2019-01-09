@@ -1,6 +1,6 @@
 ## The Problem
 
-@css[fragment](Too much information)
+@css[fragment](Too much information.)
 
 @img[fragment](https://media.giphy.com/media/3o6gDSdED1B5wjC2Gc/giphy.gif)
 
@@ -8,9 +8,9 @@
 
 ## The Problem
 
-@css[fragment](How can we more easily consume only the information we're interested in?)
+@css[fragment](How can we more easily consume the information we're *interested* in?)
 
-@css[fragment](So we can take action on it.)
+@css[fragment](So we can take *action* on it.)
 
 @css[fragment](And help prevent...)
 
@@ -18,9 +18,7 @@
 
 ---
 
-## More Specifically...
-
-@css[fragment](Here's a problem I wanted to solve...)
+## More Specifically
 
 @css[fragment](I wanted to know...)
 
@@ -60,15 +58,21 @@ BitBar lets you put the output of any script or program right in your Mac's Menu
 
 ---
 
-## How does it work?
+## How does BitBar work?
 
-- Write a simple script or run a program which outputs something
-- Use pretty much any language you like
-- It could be as simple as...
+@css[fragment](Write a simple script or run a program which outputs something)
+
+@css[fragment](Use pretty much any language you like)
+
+@css[fragment](It could be as simple as...)
+@css[fragment](
 ```bash
 echo "Hello Zapier!"
 ```
-- Or something a little more useful...
+)
+@css[fragment](Or something a little more useful...)
+
+@css[fragment](
 ```bash
 # Help Scout reply data variables
 declare help_scout_replies_week=$(curl -s -u $help_scout_api_key:X "$help_scout_url?start=$start_date_this_week&end=$end_date_this_week&viewBy=day&user=$help_scout_user_id")
@@ -81,7 +85,9 @@ declare count_hs_replies_hour=$(echo $help_scout_replies_hour | /usr/local/bin/j
 
 echo "Tickets: Hour $count_hs_replies_hour - Day: $count_hs_replies_day -  Week: count_hs_replies_week | size=12"
 ```
-- Anything that can write to *standard out* is supported, so you can use Shell scripting, Python, JavaScript, Ruby, Shell, and more...
+)
+
+@css[fragment](Anything that can write to *standard out* is supported, so you can use Shell scripting, Python, JavaScript, Ruby, Shell, and more...)
 
 ---
 
