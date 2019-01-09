@@ -98,6 +98,7 @@ echo "Tickets: Hour $count_hs_replies_hour - Day: $count_hs_replies_day -  Week:
 ## How does BitBar work?
 
 @css[fragment](Anything that can write to *standard out* is supported)
+
 @css[fragment](So you can use Shell scripting, Python, JavaScript, Ruby, Shell, and more...)
 
 ---
@@ -143,11 +144,11 @@ Then display all that information in the Menu Bar
 
 ## How I use BitBar
 
-@css[fragment](Simple script which shows me the time now in UTC)
+Simple script which shows me the time now in UTC
 
-@css[fragment](*Find this really helpful when looking in Graylog*)
+*Find this really helpful when looking in Graylog*
 
-@image[fragment](template/img/timestamp-napkin.png)
+![Timestamp](template/img/timestamp-napkin.png)
 
 ---
 
