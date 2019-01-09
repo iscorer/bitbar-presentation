@@ -148,7 +148,7 @@ Simple script which shows me the time now in UTC
 
 *Find this really helpful when looking in Graylog*
 
-![Timestamp](template/img/timestamp-napkin.png)
+@img[fragment](template/img/timestamp-napkin.png)
 
 ---
 
