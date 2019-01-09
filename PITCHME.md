@@ -79,7 +79,8 @@ echo "Hello Zapier!"
 ## How does BitBar work?
 
 Or something a little more useful...
-@size[0.5ems](```bash
+
+```bash
 # Help Scout reply data variables
 declare help_scout_replies_week=$(curl -s -u $help_scout_api_key:X "$help_scout_url?start=$start_date_this_week&end=$end_date_this_week&viewBy=day&user=$help_scout_user_id")
 declare help_scout_replies_hour=$(curl -s -u $help_scout_api_key:X "$help_scout_url?start=$start_date_this_hour&end=$end_date_this_hour&viewBy=day&user=$help_scout_user_id")
@@ -90,13 +91,14 @@ declare count_hs_replies_day=$(echo $help_scout_replies_week | /usr/local/bin/jq
 declare count_hs_replies_hour=$(echo $help_scout_replies_hour | /usr/local/bin/jq -j '.current[0].replies')
 
 echo "Tickets: Hour $count_hs_replies_hour - Day: $count_hs_replies_day -  Week: count_hs_replies_week | size=12"
-```)
+```
 
 ---
 
 ## How does BitBar work?
 
-Anything that can write to *standard out* is supported, so you can use Shell scripting, Python, JavaScript, Ruby, Shell, and more...
+@css[fragment](Anything that can write to *standard out* is supported)
+@css[fragment](So you can use Shell scripting, Python, JavaScript, Ruby, Shell, and more...)
 
 ---
 
