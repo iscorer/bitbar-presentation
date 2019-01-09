@@ -152,19 +152,21 @@ Simple script which shows me the time now in UTC
 
 ---
 
-## What I've been working on (TicketBar)
+## What I've been working on ("TicketBar")
 
-![TicketNumbers](template/img/ticket-numbers.png)
+@img[fragment](template/img/ticket-numbers.png)
 
-![TicketBar](template/img/ticket-bar-r2.png)
+@img[fragment](template/img/ticket-bar-r2.png)
 
-![TicketBar](template/img/ticket-bar-r3.png)
+@img[fragment](template/img/ticket-bar-r3.png)
 
-![TicketBar](template/img/ticket-bar-actual.png)
+@img[fragment](template/img/ticket-bar-actual.png)
+
+---
 
 ## What I'm aiming for
 
-![TicketBar](template/img/ticket-bar-mock.png)
+@img[fragment](template/img/ticket-bar-mock.png)
 
 ---
 
