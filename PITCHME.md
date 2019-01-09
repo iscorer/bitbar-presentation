@@ -26,11 +26,11 @@
 
 @css[fragment](How many Tickets have I replied to?)
 
-@css[fragment](- This week)
-
-@css[fragment](- Today)
-
-@css[fragment](- This hour)
+@ul[square]
+- This week
+- Today
+- This hour
+@ulend
 
 @css[fragment](Am I hitting targets? *Am I doing OK?*)
 
@@ -52,19 +52,11 @@ BitBar lets you put the output of any script or program right in your Mac's Menu
 
 ## How can BitBar help?
 
-@css[fragment](The MacOS Menu Bar is a convenient and accessible place to display information.)
+@css[fragment](The MacOS Menu Bar is a convenient and accessible place to display information)
 
-@css[fragment](BitBar lets *you* choose the information *you want to see* in the Menu Bar.)
+@css[fragment](BitBar lets *you* choose the information *you want to see* in the Menu Bar)
 
-@css[fragment](You can tell BitBar *when* to update the information it displays.)
-@css[fragment](
-```
-10s - ten seconds
-1m - one minute
-2h - two hours
-1d - a day
-```
-)
+@css[fragment](You can tell BitBar *when* to update the information it displays in seconds, minutes, hours or even days)
 
 ---
 
