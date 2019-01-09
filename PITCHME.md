@@ -52,7 +52,7 @@ BitBar lets you put the output of any script or program right in your Mac's Menu
 
 ## How can BitBar help?
 
-@css[fragment](The MacOS Menu Bar is a convenient, accessible and yet unobtrusive place to show information.
+@css[fragment](The MacOS Menu Bar is a convenient, accessible and yet unobtrusive place to show information.)
 
 @css[fragment](BitBar lets *you* choose what information *you* want to display in the Menu Bar.)
 
