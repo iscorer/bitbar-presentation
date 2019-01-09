@@ -1,11 +1,16 @@
 ## The Problem
 
-- Too much information
-- ![Too much information](https://media.giphy.com/media/3o6gDSdED1B5wjC2Gc/giphy.gif)
-- How can we more easily consume only the information we're interested in...
-- So we can take action on it
-- And help prevent...
-- ![Head Explosion](https://media.giphy.com/media/R0kVcQUow2Xtu/giphy.gif)
+@css[fragment](Too much information)
+@img[fragment](https://media.giphy.com/media/3o6gDSdED1B5wjC2Gc/giphy.gif)
+
+---
+
+## The Problem
+
+@css[fragment](How can we more easily consume only the information we're interested in?)
+@css[fragment](So we can take action on it.)
+@css[fragment](And help prevent...)
+@img[fragment](https://media.giphy.com/media/R0kVcQUow2Xtu/giphy.gif)
 
 ---
 
