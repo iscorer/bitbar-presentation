@@ -99,7 +99,7 @@ echo "Tickets: Hour $count_hs_replies_hour - Day: $count_hs_replies_day -  Week:
 
 @css[fragment](Anything that can write to *standard out* is supported)
 
-@css[fragment](So you can use Shell scripting, Python, JavaScript, Ruby, Shell, and more...)
+@css[fragment](So you can use Shell scripting, Python, JavaScript, Ruby, and more...)
 
 ---
 
